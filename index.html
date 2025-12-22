@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Kamachasi Fundación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kamachasi Fundación - Transformando vidas y construyendo un futuro mejor">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">Kamachasi</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero" id="inicio">
+    <h1>Kamachasi Fundación</h1>
+    <p>Transformando vidas y construyendo un futuro mejor para nuestra comunidad</p>
+    <button class="cta-button" onclick="scrollToSection('sobre')">Descubrir más</button>
+</section>
+
+<section class="section" id="sobre">
+    <h2>Nuestra Misión</h2>
+    <p class="section-subtitle">
+        Comprometidos con el cambio social y el desarrollo comunitario
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🌱 Visión</h3>
+            <p>
+                Inspirar cambios sostenibles y positivos en las comunidades,
+                construyendo un futuro más justo para todos.
+            </p>
+        </div>
+        
+        <div class="card">
+            <h3>🤝 Misión</h3>
+            <p>
+                Crear oportunidades de desarrollo y apoyo para niños,
+                personas mayores y familias en situación de vulnerabilidad.
+            </p>
+        </div>
+        
+        <div class="card">
+            <h3>❤️ Valores</h3>
+            <p>
+                Solidaridad, respeto, dignidad humana, transparencia y
+                compromiso con los más necesitados.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="noticias">
+    <h2>Últimas Noticias</h2>
+    <p class="section-subtitle">Mantente informado sobre nuestras actividades</p>
+
+    <div class="posts-grid" id="postsContainer"></div>
+    
+    <div id="adminControls" style="display:none;text-align:center;margin-top:60px;">
+        <button class="cta-button" onclick="addNewPost()">➕ Añadir Noticia</button>
+    </div>
+</section>
+
+<footer id="contacto">
+    <a id="contactButton" href="mailto:equipofun.kamachasi@gmail.com?subject=Contacto&body=Hola,%20quiero%20información" target="_blank">
+		equipofun.kamachasi@gmail.com
+	</a>
+	
+    <p>Kamachasi Fundación © 2024</p>
+    <p>
+        <a href="#" onclick="openLegalModal(event)">Aviso Legal</a> | 
+        <a href="#" onclick="openPrivacyModal(event)">Política de Privacidad</a>
+    </p>
+</footer>
+
+<div class="modal-legal" id="legalModal">
+    <div class="modal-legal-content">
+        <span class="close-legal" onclick="closeLegalModal()">&times;</span>
+        <h2>Aviso Legal</h2>
+        <div class="modal-legal-body">
+            <h3>1. Información General</h3>
+            <p><strong>Denominación:</strong> Kamachasi Fundación<br>
+            <strong>Email:</strong> equipofun.kamachasi@gmail.com</p>
+            
+            <h3>2. Objeto</h3>
+            <p>Kamachasi Fundación es una organización sin ánimo de lucro dedicada al desarrollo comunitario y la ayuda social.</p>
+            
+            <h3>3. Propiedad Intelectual</h3>
+            <p>Todos los contenidos son propiedad de Kamachasi Fundación. Queda prohibida su reproducción sin autorización.</p>
+            
+            <h3>4. Protección de Datos</h3>
+            <p>Los datos personales serán tratados conforme al RGPD y la legislación vigente.</p>
+            
+            <h3>5. Responsabilidad</h3>
+            <p>Kamachasi Fundación no se responsabiliza de daños derivados del uso incorrecto del sitio web.</p>
+            
+            <h3>6. Contacto</h3>
+            <p>Email: equipofun.kamachasi@gmail.com</p>
+            
+            <p class="last-update">Última actualización: Diciembre 2025</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal-legal" id="privacyModal">
+    <div class="modal-legal-content">
+        <span class="close-legal" onclick="closePrivacyModal()">&times;</span>
+        <h2>Política de Privacidad</h2>
+        <div class="modal-legal-body">
+            <h3>1. Responsable del Tratamiento</h3>
+            <p>Kamachasi Fundación<br>Email: equipofun.kamachasi@gmail.com</p>
+            
+            <h3>2. Datos Recopilados</h3>
+            <p>No recopilamos datos personales a través de este sitio web.</p>
+            
+            <h3>3. Finalidad</h3>
+            <p>Informar sobre las actividades de la fundación.</p>
+            
+            <h3>4. Derechos del Usuario</h3>
+            <p>Derecho de acceso, rectificación, supresión, limitación, portabilidad y oposición. Contacto: equipofun.kamachasi@gmail.com</p>
+            
+            <h3>5. Seguridad</h3>
+            <p>Implementamos medidas de seguridad para proteger la información.</p>
+            
+            <p class="last-update">Última actualización: Diciembre 2025</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/supabase.min.js"></script>
+<script src="api.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
