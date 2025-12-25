@@ -32,7 +32,7 @@ nav {
     top: 0;
     width: 100%;
     background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
     border-bottom: 1px solid rgba(0,0,0,0.08);
     z-index: 1000;
 }
@@ -46,9 +46,15 @@ nav {
     align-items: center;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: 600;
+.logo img {
+    max-height: 50px;
+    width: 100%;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
 }
 
 .nav-links {
@@ -64,6 +70,31 @@ nav {
     position: relative;
 }
 
+.nav-links a.yellow {
+    color: #FCD116; 
+}
+
+.nav-links a.red {
+    color: #CE1126; 
+}
+
+.nav-links a.blue {
+    color: #003893; 
+}
+
+.nav-links a.yellow::after {
+    background: #FCD116;
+    
+}
+
+.nav-links a.red::after {
+    background: #CE1126;
+}
+
+.nav-links a.blue::after {
+    background: #003893;
+}
+
 .nav-links a::after {
     content: "";
     position: absolute;
@@ -72,27 +103,45 @@ nav {
     width: 0%;
     height: 2px;
     background: var(--primary);
+    
     transition: width 0.3s ease;
 }
 
+
 .nav-links a:hover::after {
     width: 100%;
+    
 }
 
 /* HERO */
 .hero {
-    margin-top: 80px;
+    margin: 80px auto 0 auto;
     padding: 160px 40px;
+    max-width: 1200px;
     text-align: center;
     position: relative;
-    background: rgba(156, 153, 153, 0.9);
-}
 
+    /* flag Colombie */
+    background: linear-gradient(
+        to bottom,
+        #FCD116 0%,
+        #FCD116 50%,
+        #003893 50%,
+        #003893 75%,
+        #CE1126 75%,
+        #CE1126 100%
+    );
+}
+/*
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(255,255,255,0.9);
+}
+*/
+.hero::before {
+    display: none;
 }
 
 .hero * {
@@ -100,16 +149,17 @@ nav {
 }
 
 .hero h1 {
-    font-size: 58px;
+    font-size: 3.5rem;
     font-weight: 700;
+    color: var(--white);
     margin-bottom: 20px;
     animation: fadeUp 1s ease forwards;
 }
 
 .hero p {
-    font-size: 22px;
-    color: var(--gray);
-    max-width: 700px;
+    font-size: 2.5rem;
+    color: var(--white);
+    max-width: 900px;
     margin: auto;
     animation: fadeUp 1.2s ease forwards;
 }
@@ -117,12 +167,12 @@ nav {
 /* BUTTON */
 .cta-button {
     margin-top: 50px;
-    background: var(--primary);
+    background: #FCD116;
     color: white;
-    padding: 16px 40px;
+    padding: 32px 80px;
     border-radius: 999px;
     border: none;
-    font-size: 16px;
+    font-size: 1.6rem;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -308,6 +358,8 @@ footer p {
 
     .hero h1 {
         font-size: 34px;
+        margin-top: 3.5rem;
+        margin-bottom: 3rem;
     }
 
     .hero p {
@@ -315,8 +367,10 @@ footer p {
     }
 
     .cta-button {
-        width: 100%;
-        max-width: 320px;
+       
+        max-width: 300px;
+        padding: 14px 25px;
+        font-size: 1.2rem;
     }
 
     .section {
