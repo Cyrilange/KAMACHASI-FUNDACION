@@ -415,7 +415,7 @@ footer p {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
     .hero h1 {
         font-size: 30px;
     }
