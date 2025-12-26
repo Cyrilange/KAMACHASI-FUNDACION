@@ -418,10 +418,14 @@ footer p {
 @media (max-width: 450px) {
     .hero h1 {
         font-size: 30px;
+        
+
     }
 
     .logo img {
-        width: 50%;
+        width: 70%;
+        max-height: 35px;
+        transform: translateY(5px);
     }
 
     .hero p {
