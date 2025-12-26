@@ -17,14 +17,14 @@ const API = (() => {
             title: "Programa de Educación 2025",
             description: "Lanzamos nuestro programa educativo anual con talleres gratuitos para jóvenes y adultos.",
             image: "./assets/ballon.png",
-            date: "2024-12-10T14:30:00Z"
+            date: "2025-12-21T00:00:00Z"
         },
         {
             id: 3,
             title: "actividad para jovenes",
             description: "Únete a nuestra campaña para llevar alegría y esperanza.",
             image: "./assets/image.png",
-            date: "2024-12-05T09:00:00Z"
+            date: "2025-12-21T00:00:00Z"
         }
     ];
 
