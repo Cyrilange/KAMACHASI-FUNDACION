@@ -238,6 +238,13 @@ nav {
     gap: 80px;
 }
 
+.posts-grid img {
+    -webkit-touch-callout: none; /* iOS */
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
 .post {
     display: flex;
     gap: 50px;
