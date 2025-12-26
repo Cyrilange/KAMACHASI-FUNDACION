@@ -25,6 +25,13 @@ const API = (() => {
             description: "Únete a nuestra campaña para llevar alegría y esperanza.",
             image: "./assets/image.png",
             date: "2025-12-21T00:00:00Z"
+        },
+        {
+            id: 4,
+            title: "🎉 Novedades en camino 🎉",
+            description: "Llegaran pronto nuevos juguetes y ropas",
+            image: "./assets/braga.png",
+            date: "2025-12-26T00:00:00Z"
         }
     ];
 
