@@ -173,9 +173,17 @@ nav {
     border-radius: 999px;
     border: none;
     font-size: 1.6rem;
+    
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.fac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .cta-button:hover {
     transform: translateY(-4px);
@@ -425,7 +433,7 @@ footer p {
     .logo img {
         width: 35%;
         max-height: 35px;
-        transform: translateY(5px);
+        
     }
 
     .hero p {
