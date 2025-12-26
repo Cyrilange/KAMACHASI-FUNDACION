@@ -31,7 +31,9 @@ function createPost(post) {
         ${post.image ? `<img src="${post.image}" class="post-image" alt="${post.title}">` : ""}
         <div class="post-content">
             <h3 class="post-title">${post.title}</h3>
+            <br />
             <p class="post-description">${post.description}</p>
+            <br />
             <p class="post-date">${formatDate(post.date)}</p>
         </div>
     `;
