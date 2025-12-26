@@ -340,5 +340,7 @@ footer p {
 
 @media (max-width: 450px) {
     .hero h1 { font-size: 30px; }
-    .logo img { max-height: 35px; }
+    .logo img { 
+        max-height: 35px;
+    margin-right: 0.7rem; }
 }
