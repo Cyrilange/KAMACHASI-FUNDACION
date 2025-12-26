@@ -7,7 +7,7 @@ const API = (() => {
     const posts = [
         {
             id: 1,
-            title: "nuestra logo",
+            title: "Nuestra logo",
             description: "🎆 Estamos emocionados de anunciar nuestro sitio web. 🎆",
             image: "./assets/logo.png",
             date: "2025-12-21T00:00:00Z"
@@ -21,15 +21,15 @@ const API = (() => {
         },
         {
             id: 3,
-            title: "actividad para jovenes",
+            title: "Actividad para jovenes",
             description: "👋 Únete a nuestra campaña para llevar alegría y esperanza. 👋",
             image: "./assets/image.png",
             date: "2025-12-21T00:00:00Z"
         },
         {
             id: 4,
-            title: "🎉 Novedades en camino 🎉",
-            description: "Llegaran pronto nuevos juguetes y ropas",
+            title: "Novedades en camino",
+            description: "🎉 Llegaran pronto nuevos juguetes y ropas 🎉",
             image: "./assets/braga.png",
             date: "2025-12-26T00:00:00Z"
         }
